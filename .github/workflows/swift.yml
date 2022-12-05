@@ -12,9 +12,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Build
-        run: |
-          xcodebuild clean build -project Shoppping-cart.xcodeproj -scheme Shoppping-cart CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
 
       - name: Test
         run: |
